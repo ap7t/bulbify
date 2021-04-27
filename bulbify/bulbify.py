@@ -22,7 +22,7 @@ def convert_ms(t):
 def random_colour():
     """ Create random Colour object """
     num = randint(0, 16777215) 
-    hex_str = f"#{hex(num)[2:]}".zfill(6)
+    hex_str = "#" + f"{hex(num)[2:]}".zfill(6)
     return Color(hex_str)
 
 # spotify
@@ -39,7 +39,8 @@ while True:
     i = 0
     track = Track(sp)
 
-    start_colour = Color(choice(["red", "orange", "yellow", "green", "blue"]))
+    # start_colour = Color(choice(["red", "orange", "yellow", "green", "blue"]))
+    start_colour = random_colour()
     end_colour = invert_colour(start_colour)
 
     colours = list(start_colour.range_to(end_colour, len(track.sections)))
