@@ -9,7 +9,6 @@ class Track:
         self.uri = response["item"]["uri"]
         self.name = response["item"]["name"]
         self.artists = ", ".join([response["item"]["artists"][i]["name"] for i in range(len(response["item"]["artists"]))])
-        # self.artist = response["item"]["artists"][0]["name"]
         self.album = response["item"]["album"]["name"]
         self.progress_ms = response["progress_ms"]
         self.is_playing = response["is_playing"]
@@ -24,7 +23,6 @@ class Track:
         is_playing = response["is_playing"] 
         
         return progress_ms, uri
-    
 
 class Section:
     def __init__(self, section):
@@ -34,4 +32,9 @@ class Section:
         self.loudness = section["loudness"]
         self.tempo = section["tempo"]
         self.colour = None
+
+        duration = section["duration"]
+        totalbeats = (duration / 60 ) * self.tempo
+        self.period = duration / totalbeats 
+        self.cycles = duration / self.period
 
