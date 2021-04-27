@@ -22,7 +22,7 @@ def convert_ms(t):
 def random_colour():
     """ Create random Colour object """
     num = randint(0, 16777215) 
-    hex_str = f"#{hex(num)[2:]}".zfill(7)
+    hex_str = "#" + f"{hex(num)[2:]}".zfill(6)
     return Color(hex_str)
 
 # spotify
