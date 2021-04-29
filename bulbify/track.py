@@ -35,6 +35,9 @@ class Section:
 
         duration = section["duration"]
         totalbeats = (duration / 60 ) * self.tempo
-        self.period = duration / totalbeats 
-        self.cycles = duration / self.period
+        if totalbeats == 0:
+            self.period = self.cycles = 0
+        else:
+            self.period = duration / totalbeats 
+            self.cycles = duration / self.period
 

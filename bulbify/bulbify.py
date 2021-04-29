@@ -8,19 +8,17 @@ from random import randint, choice, shuffle
 import time
 import argparse
 from bulb import Bulb
+from rich.console import Console 
 
 def output(track, faster, louder):
-    print(f"Track: {track.name}") 
-    print(f"Artist: {track.artists}")
-    print(f"Album: {track.album}")
-    print(f"Duration: {convert_ms(track.sections[-1].end)}\n")
+    console.print(f"Track: {track.name}") 
+    console.print(f"Artist: {track.artists}")
+    console.print(f"Album: {track.album}")
+    console.print(f"Duration: {convert_ms(track.sections[-1].end)}\n")
 
-    print(f"Section: {i+1}/{len(track.sections)}")
-    print(f'Current position: {convert_ms(cur_ms)}')
-    print(f'When it\'ll change: {convert_ms(track.sections[i].end)}\n')
-
-    print(f'Period: {track.sections[i].period}\n')
-    print(f'Cycles: {track.sections[i].cycles}\n')
+    console.print(f"Section: {i+1}/{len(track.sections)}")
+    console.print(f'Current position: {convert_ms(cur_ms)}')
+    console.print(f'When it\'ll change: {convert_ms(track.sections[i].end)}\n')
     if args.tempo:
         print(f"Tempo: {'+' if faster else '-' }")
     if args.loudness:
@@ -58,6 +56,9 @@ sp = Spotify(auth=spotify_token) if spotify_token else print("Cannot get Spotify
 
 # lifx
 bulb = Bulb()
+
+# terminal
+console = Console()
 
 
 try:
@@ -109,17 +110,20 @@ try:
                 args.breathe = True
         
             # Set colour before affect for smoother transition 
-            bulb.flow(colour=colour)
+            bulb.flow(colour)
 
+            # edge case where seciton has no tempo 
+            if period == 0:
+                bulb.flow(colour)
             # Check command args and do appropriate affect 
-            if args.strobe:
+            elif args.strobe:
                 dark = False if args.colour else True
                 bulb.strobe(colour, period, cycles, dark)
             elif args.breathe:
                 dark = False if args.colour else True
                 bulb.breathe(colour, period, cycles, dark)
             
-            # loop for section
+            # section is playing 
             while cur_ms < track.sections[i].end - bulb.DURATION:
                 # behind
                 if cur_ms > track.sections[i].end:
