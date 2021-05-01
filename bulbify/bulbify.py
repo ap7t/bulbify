@@ -38,9 +38,11 @@ def random_colour():
 
 # command line args
 parser = argparse.ArgumentParser()
+parser.add_argument("-f", "--flow", action="store_true", help="Flow effect")
 parser.add_argument("-s",  "--strobe", action="store_true", help="Strobe effect")
 parser.add_argument("-b",  "--breathe", action="store_true", help="Breathe effect")
 parser.add_argument("-c",  "--colour", action="store_true", help="Breathe/strobe to inverted colour")
+parser.add_argument("-d", "--dark", action="store_true", help="Lights out")
 parser.add_argument("-t",  "--tempo", action="store_false", help="Relative changes in tempo between sections have no effect")
 parser.add_argument("-l",  "--loudness", action="store_false", help="Relative changes in loudness between sections have no effect")
 parser.add_argument("-i",  "--invert", action="store_true", help="Invert when strobe and breathe effects occur")
@@ -113,14 +115,14 @@ try:
             bulb.flow(colour)
 
             # edge case where seciton has no tempo 
-            if period == 0:
+            if period == 0 or args.flow:
                 bulb.flow(colour)
             # Check command args and do appropriate affect 
             elif args.strobe:
-                dark = False if args.colour else True
+                dark = True if args.dark else False
                 bulb.strobe(colour, period, cycles, dark)
             elif args.breathe:
-                dark = False if args.colour else True
+                dark = True if args.dark else False
                 bulb.breathe(colour, period, cycles, dark)
             
             # section is playing 
