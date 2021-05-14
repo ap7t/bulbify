@@ -13,7 +13,7 @@ class Bulb:
     def flow(self, colour):
         self.p.set_state(color=colour, brightness=self.BRIGHTNESS, duration=self.DURATION)
 
-    def strobe(self, colour, period, cycles, dark):
+    def pulse(self, colour, period, cycles, dark):
         if not dark:
             to_colour = self.invert_colour(Color(colour)).hex_l
         else:

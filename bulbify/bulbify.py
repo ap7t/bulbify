@@ -39,13 +39,13 @@ def random_colour():
 # command line args
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--flow", action="store_true", help="Flow effect")
-parser.add_argument("-s",  "--strobe", action="store_true", help="Strobe effect")
+parser.add_argument("-p",  "--pulse", action="store_true", help="Pulse effect")
 parser.add_argument("-b",  "--breathe", action="store_true", help="Breathe effect")
-parser.add_argument("-c",  "--colour", action="store_true", help="Breathe/strobe to inverted colour")
+parser.add_argument("-c",  "--colour", action="store_true", help="Breathe/Pulse to inverted colour")
 parser.add_argument("-d", "--dark", action="store_true", help="Lights out")
 parser.add_argument("-t",  "--tempo", action="store_false", help="Relative changes in tempo between sections have no effect")
 parser.add_argument("-l",  "--loudness", action="store_false", help="Relative changes in loudness between sections have no effect")
-parser.add_argument("-i",  "--invert", action="store_true", help="Invert when strobe and breathe effects occur")
+parser.add_argument("-i",  "--invert", action="store_true", help="Invert when Pulse and breathe effects occur")
 
 
 args = parser.parse_args()
@@ -104,23 +104,24 @@ try:
             else:
                 louder = True 
 
-            if louder and not args.invert:
-                args.strobe = True
-                args.breathe = False
+            if louder:
+                args.pulse = True if not args.invert else False
+                args.breathe = False if not args.invert else True
+
             else:
-                args.strobe = False
-                args.breathe = True
+                args.pulse = False if not args.invert else True
+                args.breathe = True if not args.invert else False
         
             # Set colour before affect for smoother transition 
             bulb.flow(colour)
 
-            # edge case where seciton has no tempo 
+            # edge case where section has no tempo 
             if period == 0 or args.flow:
                 bulb.flow(colour)
             # Check command args and do appropriate affect 
-            elif args.strobe:
+            elif args.pulse:
                 dark = True if args.dark else False
-                bulb.strobe(colour, period, cycles, dark)
+                bulb.pulse(colour, period, cycles, dark)
             elif args.breathe:
                 dark = True if args.dark else False
                 bulb.breathe(colour, period, cycles, dark)
