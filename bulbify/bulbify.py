@@ -31,13 +31,6 @@ def convert_ms(t):
     return f"{int((t / 1000)) // 60}:{int(t // 1000) % 60:0>2}"
 
 
-def random_colour():
-    """ Create random Colour object """
-    num = randint(0, 16777215)
-    hex_str = "#" + f"{hex(num)[2:]}".zfill(6)
-    return Color(hex_str)
-
-
 # command line args
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--flow", action="store_true", help="Flow effect")
@@ -78,11 +71,12 @@ try:
         i = 0
         track = Track(sp)
 
-        start_colour = random_colour()
+        start_colour = bulb.random_colour()
         end_colour = bulb.invert_colour(Color(start_colour))
 
         if args.random:
-            colours = [random_colour() for _ in range(len(track.sections))]
+            colours = [bulb.random_colour()
+                       for _ in range(len(track.sections))]
         else:
             colours = list(start_colour.range_to(
                 end_colour, len(track.sections)))
@@ -125,33 +119,43 @@ try:
             else:
                 louder = True
 
-            if not args.pulse or args.breathe:
-                if louder:
-                    args.pulse = True if not args.invert else False
-                    args.breathe = False if not args.invert else True
+            if louder:
+                pulse = True if not args.invert else False
+                breathe = False if not args.invert else True
 
-                else:
-                    args.pulse = False if not args.invert else True
-                    args.breathe = True if not args.invert else False
+            else:
+                pulse = False if not args.invert else True
+                breathe = True if not args.invert else False
 
+            if args.pulse:
+                pulse = True
+                breathe = False
+            elif args.breathe:
+                pulse = False
+                breathe = True
             # Set colour before affect for smoother transition
-            bulb.flow(colour)
+            # bulb.flow(colour)
 
             # edge case where section has no tempo
             if period == 0 or args.flow:
                 bulb.flow(colour)
             # Check command args and do appropriate affect
-            elif args.pulse:
+            elif pulse:
                 dark = True if args.dark else False
-                bulb.pulse(colour, period, cycles, dark)
-            elif args.breathe:
+                if args.random:
+                    bulb.pulse(colour, period, cycles, dark, True)
+                else:
+                    bulb.pulse(colour, period, cycles, dark)
+            elif breathe:
                 dark = True if args.dark else False
-                bulb.breathe(colour, period, cycles, dark)
+                if args.random:
+                    bulb.pulse(colour, period, cycles, dark, True)
+                else:
+                    bulb.pulse(colour, period, cycles, dark)
 
-            while cur_ms > track.sections[i].start - bulb.DURATION and cur_ms < track.sections[i].end - bulb.DURATION:
+            while cur_ms > track.sections[i].start - (bulb.DURATION * 1000) and cur_ms < track.sections[i].end - (bulb.DURATION * 1000):
                 os.system("clear")
                 output(track, faster, louder, i)
-                console.print(f"period: {period}, cycles: {cycles}")
 
                 time.sleep(0.5)
                 cur_ms, uri = track.update()
@@ -162,7 +166,8 @@ try:
             i += 1
 
 except Exception as e:
-    print("->", e)
+    print(e)
 
 finally:
     bulb.reset()
+    print("Finished")
