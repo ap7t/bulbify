@@ -133,8 +133,9 @@ try:
             elif args.breathe:
                 pulse = False
                 breathe = True
+
             # Set colour before affect for smoother transition
-            # bulb.flow(colour)
+            bulb.flow(colour)
 
             # edge case where section has no tempo
             if period == 0 or args.flow:
@@ -149,11 +150,12 @@ try:
             elif breathe:
                 dark = True if args.dark else False
                 if args.random:
-                    bulb.pulse(colour, period, cycles, dark, True)
+                    bulb.breathe(colour, period, cycles, dark, True)
                 else:
-                    bulb.pulse(colour, period, cycles, dark)
+                    bulb.breathe(colour, period, cycles, dark)
 
-            while cur_ms > track.sections[i].start - (bulb.DURATION * 1000) and cur_ms < track.sections[i].end - (bulb.DURATION * 1000):
+            while cur_ms > track.sections[i].start - (bulb.DURATION * 1000 * 2) and cur_ms < track.sections[i].end - (bulb.DURATION * 1000 * 2):
+                # see if * 2 for duration makes it smoother between sections if setting to colour first
                 os.system("clear")
                 output(track, faster, louder, i)
 
@@ -166,8 +168,8 @@ try:
             i += 1
 
 except Exception as e:
-    print(e)
+    print()
 
 finally:
     bulb.reset()
-    print("Finished")
+    print("done")

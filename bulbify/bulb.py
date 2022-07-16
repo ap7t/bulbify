@@ -29,7 +29,10 @@ class Bulb:
 
     def breathe(self, colour, period, cycles, dark, random=False):
         if not dark:
-            to_colour = self.invert_colour(Color(colour)).hex_l
+            if random:
+                to_colour = self.random_colour().hex_l
+            else:
+                to_colour = self.invert_colour(Color(colour)).hex_l
         else:
             to_colour = "#000000"
 
