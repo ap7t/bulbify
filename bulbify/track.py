@@ -24,7 +24,7 @@ class Track:
         response = self.sp.current_playback()
         uri = response["item"]["uri"]
         progress_ms = response["progress_ms"]
-        is_playing = response["is_playing"]
+        # is_playing = response["is_playing"]
 
         return progress_ms, uri
 

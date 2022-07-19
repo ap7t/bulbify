@@ -80,7 +80,6 @@ try:
         else:
             colours = list(start_colour.range_to(
                 end_colour, len(track.sections)))
-            shuffle(colours)
 
         faster = False
         louder = False
@@ -136,6 +135,7 @@ try:
 
             # Set colour before affect for smoother transition
             bulb.flow(colour)
+            # TODO: try see if passing duration as a arg makes it smoother
 
             # edge case where section has no tempo
             if period == 0 or args.flow:
