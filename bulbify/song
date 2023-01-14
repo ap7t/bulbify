@@ -1,0 +1,709 @@
+{
+  "href" : "https://api.spotify.com/v1/me/tracks?offset=5&limit=10&market=ES",
+  "items" : [ {
+    "added_at" : "2022-08-18T23:51:28Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 234945,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US5262224771"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2OYtcqflvzQwh3cMPmTHs4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2OYtcqflvzQwh3cMPmTHs4",
+      "id" : "2OYtcqflvzQwh3cMPmTHs4",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "There’s Fear In Letting Go",
+      "popularity" : 26,
+      "preview_url" : "https://p.scdn.co/mp3-preview/391406441f281afcf6f6bcd655da70faf0f13c17?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2OYtcqflvzQwh3cMPmTHs4"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:51:26Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 196979,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224772"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/650iZCPhzCPtSmynGnUnhT"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/650iZCPhzCPtSmynGnUnhT",
+      "id" : "650iZCPhzCPtSmynGnUnhT",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Body Bag",
+      "popularity" : 22,
+      "preview_url" : "https://p.scdn.co/mp3-preview/069fac5f2b654e330b62521e500a8aef787eb94f?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:650iZCPhzCPtSmynGnUnhT"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:51:24Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 146176,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224773"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4UhMvTR5tHf2ecfoz0KV92"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4UhMvTR5tHf2ecfoz0KV92",
+      "id" : "4UhMvTR5tHf2ecfoz0KV92",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Self-Destruction",
+      "popularity" : 28,
+      "preview_url" : "https://p.scdn.co/mp3-preview/232c22a84dc7e8ac294c388e0827ba79e2eb6ac2?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:4UhMvTR5tHf2ecfoz0KV92"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:51:23Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 228260,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US5262224774"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3jTWNaSfBQvv3HPTqQjkkM"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3jTWNaSfBQvv3HPTqQjkkM",
+      "id" : "3jTWNaSfBQvv3HPTqQjkkM",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Bad Things",
+      "popularity" : 22,
+      "preview_url" : "https://p.scdn.co/mp3-preview/772294ecb7f8c3f9d642dc73eec1139aef908de6?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:3jTWNaSfBQvv3HPTqQjkkM"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:47:40Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 171606,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224775"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0MBYfuf0BxZH1FJf6jHTus"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0MBYfuf0BxZH1FJf6jHTus",
+      "id" : "0MBYfuf0BxZH1FJf6jHTus",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Fake",
+      "popularity" : 24,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b5591eec8f2d452af40f3081705dfa4d2dd3b388?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:0MBYfuf0BxZH1FJf6jHTus"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:47:38Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 166331,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224776"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7d1GHT3e3Y5HtX8TOqL5kD"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7d1GHT3e3Y5HtX8TOqL5kD",
+      "id" : "7d1GHT3e3Y5HtX8TOqL5kD",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Judgement Day",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b7b34fb5679835aaf647ee8df61fc9f5fa38a15c?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:7d1GHT3e3Y5HtX8TOqL5kD"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:47:34Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 206142,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224778"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/27Nkg5NHILTJUcCyBkvVHt"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/27Nkg5NHILTJUcCyBkvVHt",
+      "id" : "27Nkg5NHILTJUcCyBkvVHt",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Deep End",
+      "popularity" : 22,
+      "preview_url" : "https://p.scdn.co/mp3-preview/48becbf9930333f3fbd4640a831497d3e05b8861?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:27Nkg5NHILTJUcCyBkvVHt"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:47:32Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 180727,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US5262224779"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1cetZ53ybwRhTCi6N2KHTS"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1cetZ53ybwRhTCi6N2KHTS",
+      "id" : "1cetZ53ybwRhTCi6N2KHTS",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Long Live The King",
+      "popularity" : 21,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8b631f1ff20b1bb86504bc90f1814acadb88c52d?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:1cetZ53ybwRhTCi6N2KHTS"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:47:30Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 182388,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224780"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7jm63qwHLmemNcMzORjwfi"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7jm63qwHLmemNcMzORjwfi",
+      "id" : "7jm63qwHLmemNcMzORjwfi",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Choke",
+      "popularity" : 21,
+      "preview_url" : "https://p.scdn.co/mp3-preview/42abed8c75b36f2e793e679b01403ea30ebf145e?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:7jm63qwHLmemNcMzORjwfi"
+    }
+  }, {
+    "added_at" : "2022-08-18T23:47:28Z",
+    "track" : {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+          "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+          "name" : "I Prevail",
+          "type" : "artist",
+          "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6SjY4WK6VMFYEINGVOHzGa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6SjY4WK6VMFYEINGVOHzGa",
+        "id" : "6SjY4WK6VMFYEINGVOHzGa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273fdf16e6dc8b69f3e7c2b258b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02fdf16e6dc8b69f3e7c2b258b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851fdf16e6dc8b69f3e7c2b258b",
+          "width" : 64
+        } ],
+        "name" : "TRUE POWER",
+        "release_date" : "2022-08-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 15,
+        "type" : "album",
+        "uri" : "spotify:album:6SjY4WK6VMFYEINGVOHzGa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Uobr6LgQpBbk6k4QGAb3V",
+        "id" : "3Uobr6LgQpBbk6k4QGAb3V",
+        "name" : "I Prevail",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Uobr6LgQpBbk6k4QGAb3V"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 140441,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "US5262224781"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4FtWn9oF9YneHguKyz6YYJ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4FtWn9oF9YneHguKyz6YYJ",
+      "id" : "4FtWn9oF9YneHguKyz6YYJ",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "The Negative",
+      "popularity" : 21,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dfb907c0ad297ade1964ef0bf5927acec4b00f87?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:4FtWn9oF9YneHguKyz6YYJ"
+    }
+  } ],
+  "limit" : 10,
+  "next" : "https://api.spotify.com/v1/me/tracks?offset=15&limit=10&market=ES",
+  "offset" : 5,
+  "previous" : "https://api.spotify.com/v1/me/tracks?offset=0&limit=10&market=ES",
+  "total" : 4553
+}

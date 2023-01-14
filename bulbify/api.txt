@@ -1,0 +1,3 @@
+# LIFX
+export LIFX_KEY=c19b3fb71067a513ce5805d343e427e55f0dd7622cbfc39223e056cf72d63624
+alias rl='curl -X PUT "https://api.lifx.com/v1/lights/all/state" -H "Authorization: Bearer ${LIFX_KEY}" -d "color=hue:240 kelvin:9000&brightness=25"' 

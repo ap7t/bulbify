@@ -5,15 +5,16 @@ import os
 
 
 class Bulb:
-    def __init__(self):
+    def __init__(self, label):
         self.p = PIFX(os.getenv("LIFX_KEY"))
         self.BASE_COLOUR = "hue:240 kelvin:9000"
         self.DURATION = 1
         self.BRIGHTNESS = 1
+        self.SELECTOR = f"label:{label}" if label else "all"
 
     def flow(self, colour):
         self.p.set_state(
-            color=colour, brightness=self.BRIGHTNESS, duration=self.DURATION)
+            color=colour, brightness=self.BRIGHTNESS, duration=self.DURATION,)
 
     def pulse(self, colour, period, cycles, dark, random=False):
         if not dark:
@@ -25,7 +26,7 @@ class Bulb:
             to_colour = "#000000"
 
         self.p.pulse_lights(from_color=colour, color=to_colour,
-                            period=period, cycles=cycles)
+                            period=period, cycles=cycles, selector=self.SELECTOR)
 
     def breathe(self, colour, period, cycles, dark, random=False):
         if not dark:
@@ -37,10 +38,10 @@ class Bulb:
             to_colour = "#000000"
 
         self.p.breathe_lights(
-            from_color=colour, color=to_colour, period=period*2, cycles=cycles/2)
+            from_color=colour, color=to_colour, period=period*2, cycles=cycles/2, selector=self.SELECTOR)
 
     def reset(self):
-        self.p.set_state(color=self.BASE_COLOUR)
+        self.p.set_state(color=self.BASE_COLOUR, selector=self.SELECTOR)
 
     def invert_colour(self, colour):
         """ Invert colour """

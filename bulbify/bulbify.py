@@ -48,6 +48,8 @@ parser.add_argument("-i",  "--invert", action="store_true",
                     help="Invert when Pulse and breathe effects occur")
 parser.add_argument("-r",  "--random", action="store_true",
                     help="Random colours instead of range")
+parser.add_argument("-s", "--selector",
+                    choices=["main", "secondary"], help="Choose which bulb to run on")
 
 
 args = parser.parse_args()
@@ -60,7 +62,7 @@ sp = Spotify(auth=spotify_token) if spotify_token else print(
     "Cannot get Spotify token")
 
 # lifx
-bulb = Bulb()
+bulb = Bulb(args.selector)
 
 # terminal
 console = Console()
@@ -144,15 +146,15 @@ try:
             elif pulse:
                 dark = True if args.dark else False
                 if args.random:
-                    bulb.pulse(colour, period, cycles, dark, True)
+                    bulb.pulse(colour, period, cycles,  dark,  True)
                 else:
-                    bulb.pulse(colour, period, cycles, dark)
+                    bulb.pulse(colour, period, cycles,  dark)
             elif breathe:
                 dark = True if args.dark else False
                 if args.random:
-                    bulb.breathe(colour, period, cycles, dark, True)
+                    bulb.breathe(colour, period, cycles,  dark, True)
                 else:
-                    bulb.breathe(colour, period, cycles, dark)
+                    bulb.breathe(colour, period, cycles,  dark)
 
             while cur_ms > track.sections[i].start - (bulb.DURATION * 1000 * 2) and cur_ms < track.sections[i].end - (bulb.DURATION * 1000 * 2):
                 # see if * 2 for duration makes it smoother between sections if setting to colour first
@@ -168,7 +170,7 @@ try:
             i += 1
 
 except Exception as e:
-    print()
+    print(e)
 
 finally:
     bulb.reset()
