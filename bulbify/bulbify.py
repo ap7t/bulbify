@@ -121,12 +121,12 @@ try:
                 louder = True
 
             if louder:
-                pulse = True if not args.invert else False
-                breathe = False if not args.invert else True
+                pulse = True if args.invert else False
+                breathe = False if args.invert else True
 
             else:
-                pulse = False if not args.invert else True
-                breathe = True if not args.invert else False
+                pulse = False if args.invert else True
+                breathe = True if args.invert else False
 
             if args.pulse:
                 pulse = True
